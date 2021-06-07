@@ -4,11 +4,70 @@
     padding: 0;
 }
 
-body{
-    background-color: white;
+body{    
+    font-family: 'Open Sans', sans-serif;
 }
 
-.fa-youtube{
-    font-size: 50px;
+/* utilities */
 
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.float{
+    float:left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.btn{
+    padding: 5px 10px;
+}
+
+.btn-blue{
+    background-color:#0061FF;
+    color:white;
+}
+
+.btn-small{
+    width: 50px;
+    height: 25px;
+}
+
+/* Header  */
+
+.topbar{
+    height: 50px;
+}
+
+.topbar nav{
+    line-height: 50px;
+    width: 50%;
+    
+}
+
+.topbar nav ul li{
+    display: inline;
+}
+
+
+.topbar nav ul li a img{
+    vertical-align: middle;    
+}
+
+
+.topbar nav ul li a{    
+    margin: 0 20px;
+    text-decoration:none;
+    color: black;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+.topbar nav ul li:last-child a{    
+   color:white;
 }
