@@ -50,10 +50,11 @@ body{
 }
 
 .small-container{
-    max-width: 1150px;
+    position: relative;
+    max-width: 1000px;
+    height: 100%;
     margin: 0 auto;
 }
-
 
 
 /* Header  */
@@ -153,4 +154,142 @@ header .mainheader .title h1{
 
 
 /* main */
+main{
+    height: 2500px;
+    
+}
 /* subscription solutions */
+
+.subscription-plan{
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 160px;
+    left: 10px;
+}
+/* titolo subscription plan  */
+.subscription-plan .title-subscription h3{
+    font-size: 30px;    
+} 
+/* radio buttons  */
+.subscription-plan .radio{
+    position: absolute;
+    top: 75px;
+    left: 145px;    
+}
+
+.subscription-plan .radio .monthly,
+.subscription-plan .radio .annual{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* colonne dei piani di abbonamento */
+
+.subscription-plan .solutions{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 110px;
+    left: 145px;
+}
+
+.plan{
+    width: 317px;
+    border: 1px solid grey;
+}
+
+.subscription-plan .solutions .professional{
+    height: 100%;
+    margin-right: 16px;
+}
+
+.subscription-plan .solutions .standard{
+    height: 100%;
+    margin: 0 8px;
+}
+
+.subscription-plan .solutions .advanced {
+    float: right;
+    height: 100%;
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+.subscription-plan .solutions .plan .plan-title{
+    height: 35px;
+    border-bottom: 1px solid grey;
+    line-height: 35px;
+}
+
+.subscription-plan .solutions .plan .plan-title h4{
+    font-size: 14px;
+   
+}
+
+/* contenuto dei piani di abbonamento  */
+
+/* margini contenuti piani di abbonamento  */
+.subscription-plan .solutions .plan .content-plan{ 
+    margin: 20px 20px;
+}
+
+
+.subscription-plan .solutions .plan .name-plan{
+    font-size:15px;
+    margin-bottom: 10px;    
+}
+
+.subscription-plan .solutions .plan .cost{
+    margin-bottom: 7px;    
+}
+
+.subscription-plan .solutions .plan .duration{
+    margin-bottom: 20px;    
+}
+
+.subscription-plan .solutions .plan .user-available{
+    margin-bottom: 10px;    
+}
+
+.subscription-plan .solutions .plan .memory-space{
+    margin-bottom: 15px;    
+}
+
+.subscription-plan .solutions .plan .details-plan{
+    margin-bottom: 30px;    
+}
+
+.subscription-plan .solutions .plan p{
+    margin: 20px 0;    
+}
+
+.subscription-plan .solutions .plan p a{
+    text-decoration: none;   
+}
+
+.subscription-plan .solutions .plan .content-plan hr{
+    width: 20%;   
+}
+
+
+/* punti salienti del piano */
+
+.subscription-plan .solutions .plan .content-plan .highlights-plan{
+    margin-top: 30px;   
+}
+
+.subscription-plan .solutions .plan .content-plan .highlights-plan h6{
+    font-size: 13px;
+    font-weight: 600;   
+}
+
+.subscription-plan .solutions .plan .content-plan .highlights-plan .fa-check{
+    color:blue;   
+}
+
+
+
+.subscription-plan .solutions .plan .content-plan .highlights-plan *{
+    margin: 10px 0;   
+}
