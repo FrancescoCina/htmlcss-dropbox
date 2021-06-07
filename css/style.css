@@ -57,6 +57,11 @@ body{
 }
 
 
+.border-grey{
+    border: 1px solid lightgray; 
+}
+
+
 /* Header  */
 /* barra pulsanti in alto */
 
@@ -152,7 +157,6 @@ header .mainheader .title h1{
     object-position: top;
 }
 
-
 /* main */
 main{
     height: 2500px;
@@ -196,7 +200,6 @@ main{
 
 .plan{
     width: 317px;
-    border: 1px solid grey;
 }
 
 .subscription-plan .solutions .professional{
@@ -216,13 +219,12 @@ main{
     margin-right: 0;
 }
 
-.subscription-plan .solutions .plan .plan-title{
+/* .subscription-plan .solutions .plan */.plan-title{
     height: 35px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgray;
     line-height: 35px;
 }
-
-.subscription-plan .solutions .plan .plan-title h4{
+ .plan-title h4{
     font-size: 14px;
    
 }
@@ -288,8 +290,43 @@ main{
     color:blue;   
 }
 
-
-
 .subscription-plan .solutions .plan .content-plan .highlights-plan *{
     margin: 10px 0;   
+}
+
+/* blocco enterprise */
+.enterprise{
+    position: absolute;
+    top:940px;
+    left: 125px;
+    width: 1000px;
+    height: 150px;
+    
+}
+
+.enterprise .left-enterprise{
+    width: 65%;
+    padding-top: 13px;
+    padding-left: 20px;
+}
+
+.enterprise .left-enterprise h4{
+    padding-bottom: 13px;
+    font-size:16px;
+}
+
+.enterprise .left-enterprise h6{
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.enterprise .right-enterprise{
+    width: 35%;
+    padding-top: 13px;
+    padding-right: 20px;
+}
+
+.enterprise .right-enterprise .btn{
+    padding: 4px 35px;
+    
 }
