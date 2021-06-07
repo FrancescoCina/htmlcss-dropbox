@@ -165,7 +165,7 @@ main{
     width: 100%;
     position: absolute;
     top: 160px;
-    left: 10px;
+    left: 0;
 }
 /* titolo subscription plan  */
 .subscription-plan .title-subscription h3{
@@ -175,7 +175,7 @@ main{
 .subscription-plan .radio{
     position: absolute;
     top: 75px;
-    left: 145px;    
+    left: 125px;    
 }
 
 .subscription-plan .radio .monthly,
@@ -191,7 +191,7 @@ main{
     height: 800px;
     position: absolute;
     top: 110px;
-    left: 145px;
+    left: 125px;
 }
 
 .plan{
