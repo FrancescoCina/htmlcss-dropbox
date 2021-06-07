@@ -24,8 +24,13 @@ body{
     text-align: right;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .btn{
     padding: 5px 10px;
+    text-decoration: none;
 }
 
 .btn-blue{
@@ -38,7 +43,21 @@ body{
     height: 25px;
 }
 
+.container{
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+.small-container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+
 /* Header  */
+/* barra pulsanti in alto */
 
 .topbar{
     height: 50px;
@@ -46,19 +65,16 @@ body{
 
 .topbar nav{
     line-height: 50px;
-    width: 50%;
-    
+    width: 50%;    
 }
 
 .topbar nav ul li{
     display: inline;
 }
 
-
 .topbar nav ul li a img{
     vertical-align: middle;    
 }
-
 
 .topbar nav ul li a{    
     margin: 0 20px;
@@ -71,3 +87,70 @@ body{
 .topbar nav ul li:last-child a{    
    color:white;
 }
+
+/* main header  */
+header .mainheader{
+    background-color:lightblue;
+    height: 590px;
+    position:relative;
+}
+
+/* titolo principale  */
+header .mainheader .title{
+    width: 950px;
+    position:absolute;
+    top: 50px;
+    left: 450px;    
+}
+header .mainheader .title h1{
+    font-size: 50px;  
+}
+
+/* blocchi due colonne  */
+
+.mainheader .container .cols {
+    position:absolute;
+    top:230px;
+    left:450px;
+}
+.mainheader .container .cols .col-left{
+    width: 25%;
+}
+
+.mainheader .container .cols .col-left .text{
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.mainheader .container .cols .col-left .text h3{
+    font-size: 15px;    
+    font-weight: 500;
+}
+.mainheader .container .cols .col-left .cancel{
+    margin-top:15px;
+}
+.mainheader .container .cols .col-left .cancel h4{
+    font-size: 13px;    
+    font-weight: 500;
+}
+
+.mainheader .container .cols .col-left .arrow-down{
+    padding-top: 35px;
+    font-size: 35px;
+}
+
+.mainheader .container .cols .col-right .content-img{
+    padding-bottom: 100px;
+    
+}
+
+.mainheader .container .cols .col-right .content-img img{
+    width: 750px;
+    height: 1000px;
+    object-fit: contain;
+    object-position: top;
+}
+
+
+/* main */
+/* subscription solutions */
