@@ -65,11 +65,14 @@ body{
     border: 1px solid lightgray; 
 }
 
-
 .m-top{
     margin-top: 50px;
 }
 
+
+.color-lightgrey{
+    color:lightgray;
+}
 
 /* Header  */
 /* barra pulsanti in alto */
@@ -609,4 +612,75 @@ main{
 
 .small-container .frequent-questions .question-row:last-child{
     border-bottom: 1px solid lightgray;    
+}
+
+/* footer */
+
+footer{
+    height: 500px;
+    background-color: #000;
+    position:relative;  
+    top: 1800px;
+}
+
+footer .container{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+footer .container .sitemap{
+    color:white;
+    margin: 0 auto;
+}
+
+footer .container .sitemap .site-section{
+    width: 20%;
+    padding: 0 50px;
+}
+
+footer .container .sitemap:last-child .site-section{
+    margin-bottom: 100px;
+}
+
+footer .container .sitemap .site-section ul{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+footer .container .sitemap .site-section ul li:first-child{
+    margin-top: 15px;
+}
+
+footer .container .sitemap .site-section ul li{
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+footer .container .sitemap .site-section ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+footer .container .sitemap hr{
+    margin-left:50px;
+    color: white;
+    width: 10%;
+}
+
+/* lingua */
+
+footer .container .language{
+    margin-top: 50px;
+    margin-left:50px;
+    color:lightgray;
+}
+
+footer .container .language .fas{
+    padding: 0 5px;
+
 }
