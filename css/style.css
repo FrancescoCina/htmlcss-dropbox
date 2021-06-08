@@ -61,18 +61,21 @@ body{
     height: 100%;
     margin: 0 auto;
 }
-
-
 .border-grey{
     border: 1px solid lightgray; 
 }
-
 
 /* Header  */
 /* barra pulsanti in alto */
 
 .topbar{
+    width: 100%;
     height: 50px;
+    background-color: #fff;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
 }
 
 .topbar nav{
@@ -230,13 +233,13 @@ main{
     line-height: 35px;
 }
  .plan-title h4{
-    font-size: 14px;
-   
+    font-size: 14px;   
 }
 
 /* contenuto dei piani di abbonamento  */
 
 /* margini contenuti piani di abbonamento  */
+
 .subscription-plan .solutions .plan .content-plan{ 
     margin: 20px 20px;
 }
@@ -278,7 +281,6 @@ main{
 .subscription-plan .solutions .plan .content-plan hr{
     width: 20%;   
 }
-
 
 /* punti salienti del piano */
 
