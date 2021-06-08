@@ -458,7 +458,7 @@ main{
 .companies .main-section-companies .central-square{
     height: 100%;
     width: 40%;
-    background-color: pink;
+    background-color: #e9f1e8;
 }
 
 .companies .main-section-companies .left-square .little-square, 
@@ -493,31 +493,57 @@ main{
 .green{
     background-color: #7fcb7f;
 }
-
 .bordeaux{
     background-color: #660000;
 }
-
 .lightblue{
     background-color: #9191ce;
 }
-
 .red{
     background-color: red;
 }
-
 .darkred{
     background-color: rgb(161, 0, 0);
 }
-
 .heavenly{
     background-color: #d2d2ef;
 }
-
 .blue{
     background-color: #06068c;
 }
-
 .yellow{
     background-color: #d9e108; 
 }
+
+/* sezione centrale */
+
+
+.companies .main-section-companies .central-square{
+    padding-top: 20px;
+    padding-left: 40px;   
+    padding-right: 50px;   
+}
+
+.companies .main-section-companies .central-square hr{
+    width: 8%;     
+    color:#000;
+}
+
+.companies .main-section-companies .central-square .title-central-square img{
+    width: 100px;
+    height: 100px; 
+    object-fit: contain;   
+}
+
+.companies .main-section-companies .central-square .text-central-square p{
+    margin-top: 45px;  
+    font-size: 14px;
+}
+
+.companies .main-section-companies .central-square .text-central-square .author{
+    margin-top: 45px;  
+    font-size: 14px;
+}
+
+
+
