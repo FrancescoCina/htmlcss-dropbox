@@ -58,7 +58,7 @@ body{
 .small-container{
     position: relative;
     max-width: 1000px;
-    height: 100%;
+    height: 115%;
     margin: 0 auto;
 }
 .border-grey{
@@ -76,7 +76,7 @@ body{
     z-index: 1;
     top:0;
     left:0;
-}
+} 
 
 .topbar nav{
     line-height: 50px;
@@ -416,3 +416,108 @@ main{
     color:black;
 }
 
+
+/* section companies */
+
+.companies{
+    width: 100%;
+    height: 800px;
+}
+
+.companies .header-section-companies{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.companies .header-section-companies h3{
+    font-size: 25px;
+    width: 355px;
+    padding-bottom: 10px;
+}
+
+.companies .header-section-companies a{
+    text-decoration: none;
+}
+
+
+.companies .main-section-companies{
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+    background-color: brown;
+}
+
+
+.companies .main-section-companies .left-square, 
+.companies .main-section-companies .right-square{
+    height: 100%;
+    width: 30%;
+    background-color: yellow;
+}
+
+.companies .main-section-companies .central-square{
+    height: 100%;
+    width: 40%;
+    background-color: pink;
+}
+
+.companies .main-section-companies .left-square .little-square, 
+.companies .main-section-companies .right-square .little-square{
+    width: 50%;
+    height: 50%;
+    /* background-color: blue; */
+}
+
+.companies .main-section-companies .left-square .little-square, 
+.companies .main-section-companies .right-square .little-square{
+    width: 50%;
+    height: 50%;
+    position: relative;
+}
+
+
+.companies .main-section-companies .left-square .little-square img, 
+.companies .main-section-companies .right-square .little-square img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate( -50%, -50% );
+    object-fit: contain;
+}
+
+
+/* backgound color little square */
+
+.green{
+    background-color: #7fcb7f;
+}
+
+.bordeaux{
+    background-color: #660000;
+}
+
+.lightblue{
+    background-color: #9191ce;
+}
+
+.red{
+    background-color: red;
+}
+
+.darkred{
+    background-color: rgb(161, 0, 0);
+}
+
+.heavenly{
+    background-color: #d2d2ef;
+}
+
+.blue{
+    background-color: #06068c;
+}
+
+.yellow{
+    background-color: #d9e108; 
+}
