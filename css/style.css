@@ -65,6 +65,10 @@ body{
     border: 1px solid lightgray; 
 }
 
+.color-link{
+    color: #0061FF;
+}
+
 .m-top{
     margin-top: 50px;
 }
@@ -123,7 +127,7 @@ header .mainheader{
 header .mainheader .title{
     width: 950px;
     position:absolute;
-    top: 50px;
+    top: 80px;
     left: 450px;    
 }
 header .mainheader .title h1{
@@ -134,7 +138,7 @@ header .mainheader .title h1{
 
 .mainheader .container .cols {
     position:absolute;
-    top:230px;
+    top:255px;
     left:450px;
 }
 .mainheader .container .cols .col-left{
@@ -399,7 +403,7 @@ main{
 .dropbox-business .first-row, 
 .dropbox-business .second-row{
     width: 100%;
-    height: 400px;
+    height: 415px;
 }
 
 .dropbox-business .first-row .col, 
@@ -418,7 +422,8 @@ main{
 }
 
 .dropbox-business .first-row .col .col-text h3{
-    padding-bottom: 20px;
+    padding-bottom: 1px;
+    font-size: 20px;
 }
 
 .dropbox-business .first-row .col .col-text p a{
@@ -503,16 +508,16 @@ main{
     background-color: #7fcb7f;
 }   
 .bordeaux{
-    background-color: #660000;
+    background-color: #640505;
 }
 .lightblue{
-    background-color: #9191ce;
+    background-color:#4c75a0;
 }
 .red{
     background-color: red;
 }
 .darkred{
-    background-color: rgb(161, 0, 0);
+    background-color: rgb(255, 0, 0);
 }
 .heavenly{
     background-color: #d2d2ef;
@@ -521,7 +526,7 @@ main{
     background-color: #06068c;
 }
 .yellow{
-    background-color: #d9e108; 
+    background-color: #ffc107; 
 }
 
 /* sezione centrale */
@@ -566,7 +571,6 @@ main{
 .footer-section-companies{
     width: 100%;
     height: 255px;
-    background-color: #d2d2ef;
 }
 
 .footer-section-companies .col{
@@ -576,11 +580,17 @@ main{
 .footer-section-companies .col h4{
    font-size: 32px;
    padding: 82px 0px 100px 35px;
+   color: #640505;
 }   
 
 .free-trial-btn{
     padding: 120px 0 160px 185px;
 }
+
+.free-trial-btn .btn{
+    padding: 4px 50px;
+}
+
 
 
 /* frequent questions */
@@ -617,7 +627,7 @@ main{
 /* footer */
 
 footer{
-    height: 500px;
+    height: 440px;
     background-color: #000;
     position:relative;  
     top: 1800px;
