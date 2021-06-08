@@ -492,7 +492,7 @@ main{
 
 .green{
     background-color: #7fcb7f;
-}
+}   
 .bordeaux{
     background-color: #660000;
 }
@@ -545,5 +545,32 @@ main{
     font-size: 14px;
 }
 
+/* bordo in hover sui quadrati delle companies */
+.companies .main-section-companies .left-square .little-square:hover, 
+.companies .main-section-companies .right-square .little-square:hover, 
+.companies .main-section-companies .central-square .little-square:hover{
+    border: 10px solid rgb(233, 231, 231);
+    opacity: 0.8;
+}
+
+
+.footer-section-companies{
+    width: 100%;
+    height: 300px;
+    background-color: #d2d2ef;
+}
+
+.footer-section-companies .col{
+    width: 50%;
+}
+
+.footer-section-companies .col h4{
+   font-size: 32px;
+   padding: 82px 0px 100px 115px;
+}
+
+.free-trial-btn{
+    padding: 120px 0 160px 185px;
+}
 
 
