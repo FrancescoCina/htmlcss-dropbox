@@ -466,6 +466,11 @@ main{
     line-height: 28px;
 }
 
+
+.text-pic a:hover{
+    filter:brightness(0.9);
+}
+
 /* DROPBOX BUSINESS */
 
 .dropbox-business{
