@@ -19,9 +19,9 @@ body{
 .float{
     float:left;
 }
-/* .float-right{
+ .push-right{
     float: right;
-} */
+} 
 
 .text-right{
     text-align: right;
@@ -103,8 +103,8 @@ body{
     font-size: 14px;   
 }
 
-/* Header  */
-/* Topbar - barra pulsanti in alto */
+/* HEADER  */
+/* TOPBAR - barra pulsanti in alto */
 
 .topbar{
     width: 100%;
@@ -123,17 +123,17 @@ body{
 }
 
 .topbar nav ul li{    
+    height: 100%;   
+    list-style-type: none;
+}
+
+.topbar nav ul .highlighted{
     height: 100%;
-    display: inline-block;
 }
 
 .topbar nav ul .highlighted:hover{
     background-color: transparent;
     border-bottom: 3px solid blue;
-}
-
-.topbar nav ul li{
-    list-style-type: none;
 }
 
 .topbar nav ul li a img{
@@ -167,6 +167,7 @@ body{
 
 .topbar .nav-right ul .support li ul li:hover{
     background-color: lightgrey; 
+    border-bottom: lightgrey;
 }
 
 /* main header  */
