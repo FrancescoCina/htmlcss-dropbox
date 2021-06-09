@@ -8,7 +8,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-/* utilities */
+/* UTILITIES */
 
 .clearfix::after{
     display: table;
@@ -170,14 +170,14 @@ body{
     border-bottom: lightgrey;
 }
 
-/* main header  */
+/* MAIN HEADER  */
 header .mainheader{
     background-color:lightblue;
     height: 590px;
     position:relative;
 }
 
-/* titolo principale  */
+/* TITOLO PRINCIPALE  */
 header .mainheader .title{
     width: 950px;
     position:absolute;
@@ -189,7 +189,7 @@ header .mainheader .title h1{
     font-size: 50px;  
 }
 
-/* blocchi due colonne  */
+/* BLOCCHI DUE COLONNE  */
 
 .mainheader .container .cols {
     position:absolute;
@@ -255,7 +255,7 @@ main{
     height: 2500px;    
 }
 
-/* subscription solutions */
+/* SUBSCRIPTION SOLUTIONS */
 
 .subscription-plan{
     width: 100%;
@@ -280,7 +280,7 @@ main{
     margin: 0 15px;
 }
 
-/* colonne dei piani di abbonamento */
+/* COLONNE DEI PIANI DI ABBONAMENTO */
 
 .subscription-plan .solutions{
     width: 100%;
@@ -311,14 +311,14 @@ main{
     margin-right: 0;
 }
 
-/* .subscription-plan .solutions .plan */.plan-title{
+.subscription-plan .solutions .plan .plan-title{
     height: 35px;
     border-bottom: 1px solid lightgray;
     line-height: 35px;
 }
 
-/* contenuto dei piani di abbonamento  */
-/* margini contenuti dei piani di abbonamento  */
+/* CONTENUTO DEI PIANI DI ABBONAMENTO */
+/* MARGINI CONTENUTI DEI PIANI DI ABBONAMENTO  */
 
 .subscription-plan .solutions .plan .content-plan{ 
     margin: 20px 20px;
@@ -346,10 +346,16 @@ main{
 
 .subscription-plan .solutions .plan .details-plan{
     margin-bottom: 30px;    
+    margin-left: 19px;
 }
 
 .subscription-plan .solutions .plan p{
     margin: 20px 0;    
+}
+
+.plan .content-plan div .fas,
+.plan .content-plan div .far{
+    padding-right:2px;
 }
 
 .subscription-plan .solutions .plan p a{
@@ -360,7 +366,17 @@ main{
     width: 20%;   
 }
 
-/* punti salienti del piano */
+.fa-pen {
+    text-indent:-1.5em;
+    padding-right: 2px;
+}
+
+.fa-smile {
+    text-indent:-1.5em;
+    margin-right: 2px;
+}
+
+/* PUNTI SALIENTI DEL PIANO */
 
 .subscription-plan .solutions .plan .content-plan .highlights-plan{
     margin-top: 30px;   
@@ -379,7 +395,7 @@ main{
     margin: 10px 0;   
 }
 
-/* blocco enterprise */
+/* BLOCCO ENTEPRISE */
 .enterprise{
     position: absolute;
     top:940px;
@@ -450,7 +466,7 @@ main{
     line-height: 28px;
 }
 
-/* Dropbox business */
+/* DROPBOX BUSINESS */
 
 .dropbox-business{
     position: absolute;
@@ -494,7 +510,7 @@ main{
     color:black;
 }
 
-/* section companies */
+/* SECTION COMPANIES */
 
 .companies{
     width: 100%;
@@ -561,7 +577,7 @@ main{
     object-fit: contain;
 }
 
-/* backgound color little square */
+/* BACKGROUND COLOR LITTLE SQUARE */
 
 .green{
     background-color: #7fcb7f;
@@ -588,7 +604,7 @@ main{
     background-color: #ffc107; 
 }
 
-/* sezione centrale */
+/* CENTRAL SQUARE */
 
 .companies .main-section-companies .central-square hr{
     width: 8%;     
@@ -603,8 +619,7 @@ main{
 
 .companies .main-section-companies .central-square .text-central-square p, 
 .companies .main-section-companies .central-square .text-central-square .author{
-    margin-top: 45px;  
-    
+    margin-top: 45px;      
 }
 
 /* bordo in hover sui quadrati delle companies */
@@ -632,11 +647,16 @@ main{
 }   
 
 .free-trial-btn{
-    padding: 120px 0 160px 185px;
+    padding: 120px 0 160px 185px;  
 }
 
 .free-trial-btn .btn{
     padding: 4px 50px;
+    border: 0.5px solid white;
+}
+
+.free-trial-btn .btn:hover{
+    filter:brightness(0.9);
 }
 
 
@@ -653,10 +673,6 @@ main{
 .second-small-container .frequent-questions h4{
     font-size:22px;
 }
-.second-small-container .frequent-questions .question-row{
-    height: 65px;    
-    border-top: 1px solid lightgray;    
-}
 
 .second-small-container .frequent-questions .question-row .question{
     width: 90%;
@@ -667,22 +683,15 @@ main{
     width:10%;
     line-height: 50px;
 }
-
+.second-small-container .frequent-questions .question-row{
+    height: 65px;    
+    border-top: 1px solid lightgray;    
+}
 .second-small-container .frequent-questions .question-row:last-child{
     border-bottom: 1px solid lightgray;    
 }
 
-/* .second-small-container .frequent-questions.question-row .content-hidden{
-
-} */
-
-
-
-
-
-
-
-/* footer */
+/* FOOTER */
 
 footer{
     height: 440px;
@@ -701,6 +710,7 @@ footer .container{
 footer .container .sitemap{
     color:white;
     margin: 0 auto;
+    padding-bottom: 110px;
 }
 
 footer .container .sitemap .site-section{
@@ -733,13 +743,13 @@ footer .container .sitemap .site-section ul li a{
     color:white;
 }
 
-footer .container .sitemap hr{
+footer .container hr{
     margin-left:50px;
     color: white;
     width: 10%;
 }
 
-/* lingua */
+/* LINGUA */
 
 footer .container .language{
     margin-top: 50px;
@@ -751,3 +761,7 @@ footer .container .language .fas{
     padding: 0 5px;
 
 }
+
+
+
+
