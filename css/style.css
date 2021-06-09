@@ -49,6 +49,10 @@ body{
     height: 25px;
 }
 
+.btn:hover{
+    filter:brightness(1.4)
+}
+
 .container{
     max-width: 1400px;
     height: 100%;
@@ -61,10 +65,21 @@ body{
     height: 115%;
     margin: 0 auto;
 }
+
+.second-small-container{
+    position: relative;
+    max-width: 1000px;
+    height: 40%;
+    margin: 0 auto;
+}
+
 .border-grey{
     border: 1px solid lightgray; 
 }
 
+.bottom-border-grey{
+    border-bottom: 0.5px solid lightgray;
+}
 .color-link{
     color: #0061FF;
 }
@@ -73,13 +88,23 @@ body{
     margin-top: 50px;
 }
 
-
 .color-lightgrey{
     color:lightgray;
 }
 
+.f-size-15{
+    font-size: 15px;
+}
+
+.f-size-14{
+    font-size: 14px;   
+}
+
+
+
+
 /* Header  */
-/* barra pulsanti in alto */
+/* Topbar - barra pulsanti in alto */
 
 .topbar{
     width: 100%;
@@ -93,8 +118,20 @@ body{
 
 .topbar nav{
     line-height: 50px;
+    /* height: 100%; */
     width: 50%;    
 }
+
+.topbar nav ul .highlighted{
+    height: 100%;
+    display: inline-block;
+}
+
+.topbar nav ul .highlighted:hover{
+    background-color: transparent;
+    border-bottom: 3px solid blue;
+}
+
 
 .topbar nav ul li{
     display: inline;
@@ -112,9 +149,55 @@ body{
     font-weight: 550;
 }
 
-.topbar nav ul li:last-child a{    
+.topbar .nav-right ul li .btn{    
    color:white;
 }
+
+
+.topbar .nav-right ul .drop-down-menu li{
+    display: block;
+    float:left;
+    width: 100%;
+    
+
+    
+}
+
+
+.topbar .nav-right ul .drop-down-menu li:hover{
+    display: inline-block;
+    float:left;
+    background-color: lightgrey; 
+}
+
+
+
+.topbar .nav-right ul .drop-down-menu{    
+    position:absolute;
+    top:50px;
+    right: 290px;
+    width: 175px;
+    height: 105px;
+    background-color: white;
+    
+ }
+
+
+
+
+ /* .topbar .nav-right ul .support:hover .drop-down-menu{    
+    position:absolute;
+    top:50px;
+    right: 212px;
+    width: 250px;
+    height: 80px;
+    background-color: red;
+    display:block;
+ } */
+
+
+
+
 
 /* main header  */
 header .mainheader{
@@ -130,6 +213,7 @@ header .mainheader .title{
     top: 80px;
     left: 450px;    
 }
+
 header .mainheader .title h1{
     font-size: 50px;  
 }
@@ -151,7 +235,6 @@ header .mainheader .title h1{
 }
 
 .mainheader .container .cols .col-left .text h3{
-    font-size: 15px;    
     font-weight: 500;
 }
 .mainheader .container .cols .col-left .cancel{
@@ -167,9 +250,25 @@ header .mainheader .title h1{
     font-size: 35px;
 }
 
+.mainheader .container .cols .col-left .arrow-down .fa-arrow-down{
+    animation: bouncing 0.5s infinite alternate;
+}
+
+@keyframes bouncing{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-25px);
+    }
+}
+
+
 .mainheader .container .cols .col-right .content-img{
-    padding-bottom: 100px;
-    
+    padding-bottom: 100px;    
 }
 
 .mainheader .container .cols .col-right .content-img img{
@@ -181,9 +280,9 @@ header .mainheader .title h1{
 
 /* main */
 main{
-    height: 2500px;
-    
+    height: 2500px;    
 }
+
 /* subscription solutions */
 
 .subscription-plan{
@@ -200,7 +299,7 @@ main{
 .subscription-plan .radio{
     position: absolute;
     top: 75px;
-    left: 125px;    
+    left: 0;    
 }
 
 .subscription-plan .radio .monthly,
@@ -216,7 +315,7 @@ main{
     height: 800px;
     position: absolute;
     top: 110px;
-    left: 125px;
+    left: 0;
 }
 
 .plan{
@@ -245,21 +344,15 @@ main{
     border-bottom: 1px solid lightgray;
     line-height: 35px;
 }
- .plan-title h4{
-    font-size: 14px;   
-}
 
 /* contenuto dei piani di abbonamento  */
-
-/* margini contenuti piani di abbonamento  */
+/* margini contenuti dei piani di abbonamento  */
 
 .subscription-plan .solutions .plan .content-plan{ 
     margin: 20px 20px;
 }
 
-
 .subscription-plan .solutions .plan .name-plan{
-    font-size:15px;
     margin-bottom: 10px;    
 }
 
@@ -318,7 +411,7 @@ main{
 .enterprise{
     position: absolute;
     top:940px;
-    left: 125px;
+    left: 0;
     width: 1000px;
     height: 150px;
 }
@@ -336,7 +429,6 @@ main{
 
 .enterprise .left-enterprise h6{
     padding-bottom: 15px;
-    font-size: 14px;
 }
 
 .enterprise .right-enterprise{
@@ -354,7 +446,7 @@ main{
     width: 100%;
     position: absolute;
     top:1350px;
-    left:125px;
+    left:0;
 }
 
 .pic{
@@ -391,7 +483,7 @@ main{
 .dropbox-business{
     position: absolute;
     top: 1900px;
-    left: 125px;
+    left: 0;
     width: 100%;
     height: 1000px;    
 }
@@ -430,7 +522,6 @@ main{
     color:black;
 }
 
-
 /* section companies */
 
 .companies{
@@ -453,33 +544,31 @@ main{
     text-decoration: none;
 }
 
-
 .companies .main-section-companies{
     margin-top: 30px;
     height: 500px;
-    width: 100%;
-    background-color: brown;
+    width: 100%;   
 }
-
 
 .companies .main-section-companies .left-square, 
 .companies .main-section-companies .right-square{
     height: 100%;
     width: 30%;
-    background-color: yellow;
 }
 
 .companies .main-section-companies .central-square{
     height: 100%;
     width: 40%;
     background-color: #e9f1e8;
+    padding-top: 20px;
+    padding-left: 40px;   
+    padding-right: 50px;  
 }
 
 .companies .main-section-companies .left-square .little-square, 
 .companies .main-section-companies .right-square .little-square{
     width: 50%;
-    height: 50%;
-    /* background-color: blue; */
+    height: 50%;    
 }
 
 .companies .main-section-companies .left-square .little-square, 
@@ -488,7 +577,6 @@ main{
     height: 50%;
     position: relative;
 }
-
 
 .companies .main-section-companies .left-square .little-square img, 
 .companies .main-section-companies .right-square .little-square img{
@@ -500,7 +588,6 @@ main{
     transform: translate( -50%, -50% );
     object-fit: contain;
 }
-
 
 /* backgound color little square */
 
@@ -531,13 +618,6 @@ main{
 
 /* sezione centrale */
 
-
-.companies .main-section-companies .central-square{
-    padding-top: 20px;
-    padding-left: 40px;   
-    padding-right: 50px;   
-}
-
 .companies .main-section-companies .central-square hr{
     width: 8%;     
     color:#000;
@@ -549,14 +629,10 @@ main{
     object-fit: contain;   
 }
 
-.companies .main-section-companies .central-square .text-central-square p{
-    margin-top: 45px;  
-    font-size: 14px;
-}
-
+.companies .main-section-companies .central-square .text-central-square p, 
 .companies .main-section-companies .central-square .text-central-square .author{
     margin-top: 45px;  
-    font-size: 14px;
+    
 }
 
 /* bordo in hover sui quadrati delle companies */
@@ -595,32 +671,32 @@ main{
 
 /* frequent questions */
 
-.small-container .frequent-questions{
+.second-small-container .frequent-questions{
     position:absolute;
     top:50px;
     left:0;    
     width: 100%;
 }
 
-.small-container .frequent-questions h4{
+.second-small-container .frequent-questions h4{
     font-size:22px;
 }
-.small-container .frequent-questions .question-row{
+.second-small-container .frequent-questions .question-row{
     height: 65px;    
     border-top: 1px solid lightgray;    
 }
 
-.small-container .frequent-questions .question-row .question{
+.second-small-container .frequent-questions .question-row .question{
     width: 90%;
     line-height: 65px;
     font-weight: 800;
 }
-.small-container .frequent-questions .question-row .chevron-down{
+.second-small-container .frequent-questions .question-row .chevron-down{
     width:10%;
     line-height: 50px;
 }
 
-.small-container .frequent-questions .question-row:last-child{
+.second-small-container .frequent-questions .question-row:last-child{
     border-bottom: 1px solid lightgray;    
 }
 
@@ -655,7 +731,6 @@ footer .container .sitemap:last-child .site-section{
 }
 
 footer .container .sitemap .site-section ul{
-    font-size: 15px;
     font-weight: 600;
 }
 

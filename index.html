@@ -6,36 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropbox Business</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" href="./img/Dropbox_favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <!-- HEADER -->
+    <header> 
+        <!-- TOPBAR -->
         <div class="topbar clearfix">
             <nav class="nav-left float">
-                <ul>
-                    <li><a href="#"><img src="./img/logo-small.png" alt="Logo Dropbox"></a></li>
-                    <li><a href="#">Perchè Dropbox?</a></li>
-                    <li><a href="#">Funzioni</a></li>
-                    <li><a href="#">Piani e prezzi</a></li>
-                </ul>
+                <ul>                   
+                    <li><a href="#"><img src="./img/logo-small.png" alt="Logo Dropbox"></a></li>  
+                    <span class="highlighted">
+                        <li><a href="#">Perchè Dropbox?</a></li>                    
+                    </span>                    
+                    <span class="highlighted">
+                        <li><a href="#">Funzioni</a></li> 
+                    </span>                              
+                    <span class="highlighted">
+                        <li><a href="#">Piani e prezzi</a></li>
+                    </span>                    
+                </ul>   
             </nav>
             <nav class="nav-right float text-right">
                 <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a href="#">Accedi</a></li> 
+                    <span class="highlighted support">
+                        <li><a href="#">Support</a></li>
+                    </span>
+                    <!-- <div class="drop-down-menu">
+                        <ul>
+                            <li><a href="#">Supporto via Email</a></li>
+                            <li><a href="#">Supporto Telefonico</a></li>
+
+                        </ul>
+                    </div> -->
+                    <span class="highlighted">
+                        <li><a href="#">Contatta l'ufficio vendite</a></li>
+                    </span>
+                    <span class="highlighted">
+                        <li><a href="#">Accedi</a></li>
+                    </span> 
                     <li><a class="btn btn-small btn-blue" href="#">Inizia</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- CONTENUTO PRINCIPALE HEADER -->
         <div class="mainheader">
             <div class="container">
                 <div class="title"><h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1></div>
                 <div class="cols clearfix">
                     <div class="col-left float">
-                        <div class="text"><h3>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</h3></div>
+                        <div class="text"><h3 class="f-size-15">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</h3></div>
                         <div><a class="btn btn-blue btn-big" href="#">Inizia la tua prova gratuita</a></div>
                         <div class="cancel"><h4>Annulla in qualsiasi momento</h4></div>
                         <div class="arrow-down"><i class="fas fa-arrow-down"></i></div>
@@ -50,6 +73,7 @@
         </div>
     </header>
     <main>
+        <!-- PIANI DI ABBONAMENTO -->
         <div class="small-container"> 
             <div class="subscription-plan">
                 <div class="title-subscription text-center">
@@ -57,22 +81,22 @@
                 </div>
                 <div class="radio">
                     <div class="monthly">
-                        <input type="radio" id="billing" for="fatturazionemensile" checked>
+                        <input type="radio" id="billing-monthly" for="fatturazionemensile" checked>
                         <label for="fatturazionemensile">Fatturazione mensile</label>
                     </div>
                     <div class="annual">
-                        <input type="radio" id="billing" for="fatturazioneannuale">
+                        <input type="radio" id="billing-annual" for="fatturazioneannuale">
                         <label for="fatturazioneannuale">Fatturazione annuale</label>
                     </div>
                 </div>
                 <div class="solutions clearfix">
                     <!-- PRIMA COLONNA  -->
                     <div class="plan border-grey float professional">
-                        <div class="plan-title">
+                        <div class="plan-title f-size-14">
                             <h4 class="text-center"><i class="far fa-user"></i> Singolo</h4>
                         </div>
                         <div class="content-plan">   
-                            <div class="name-plan">
+                            <div class="name-plan f-size-15">
                                 <h4>Professional</h4>
                             </div>                        
                             <div class="cost"><strong>19,99 €</strong></div>
@@ -94,11 +118,11 @@
                     </div>
                     <!-- SECONDA COLONNA  -->
                     <div class="plan border-grey float standard">
-                        <div class="plan-title">
+                        <div class="plan-title f-size-14">
                             <h4 class="text-center"><i class="far fa-building"></i> Team</h4>
                         </div>
                         <div class="content-plan">   
-                            <div class="name-plan">
+                            <div class="name-plan f-size-15">
                                 <h4>Standard</h4>
                             </div>                        
                             <div class="cost"><strong>19,99 €</strong></div>
@@ -121,11 +145,11 @@
                     </div>
                     <!-- TERZA COLONNA -->
                     <div class="plan border-grey advanced">
-                        <div class="plan-title">
+                        <div class="plan-title f-size-14">
                             <h4 class="text-center"><i class="far fa-building"></i> Team</h4>
                         </div>
                         <div class="content-plan">   
-                            <div class="name-plan">
+                            <div class="name-plan f-size-15">
                                 <h4>Advanced</h4>
                             </div>                        
                             <div class="cost"><strong>19,99 €</strong></div>
@@ -147,22 +171,24 @@
                         </div>               
                     </div>
                 </div>
+                <!-- PIANO ENTERPRISE -->
                 <div class="enterprise clearfix border-grey">
                     <div class="title-enterprise">
                         <div class="plan-title">
                             <h4 class="text-center"><i class="far fa-building"></i> Team</h4>
                         </div>
-                        <div class="left-enterprise float">
-                            <h4>Enterprise</h4>
-                            <h6>Contatta l'ufficio vendite per i prezzi</h6>
-                            <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
-                        </div>
-                        <div class="right-enterprise float">
-                            <a class="btn btn-blue btn-big" href="#">Contatta l'ufficio vendite</a>
-                        </div>
+                    </div>
+                    <div class="left-enterprise float">
+                        <h4 class="f-size-14">Enterprise</h4>
+                        <h6>Contatta l'ufficio vendite per i prezzi</h6>
+                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.</p>
+                    </div>
+                    <div class="right-enterprise float">
+                        <a class="btn btn-blue btn-big" href="#">Contatta l'ufficio vendite</a>
                     </div>
                 </div>
             </div>
+            <!-- SEZIONE PARTNER -->
             <div class="partner-dropbox clearfix">
                 <div class="pic float">
                     <img src="./img/partner.png" alt="Partner Dropbox">
@@ -173,6 +199,7 @@
                     <a class="btn btn-white btn-big" href="">Trova un partner</a>
                 </div>
             </div>
+            <!-- SEZIONE DROPBOX BUSINESS -->
             <div class="dropbox-business clearfix">
                 <div class="title-business"><h2>Esegui più operazioni con Dropbox Business</h2></div>
                 <div class="first-row">
@@ -223,6 +250,7 @@
                 </div>
             </div>
         </div>
+        <!-- SEZIONE BOXINI COLORATI CLIENTI -->
         <div class="companies">
             <div class="header-section-companies">
                 <h3>Più di 500.000 team utilizzano Dropbox Business</h3>
@@ -249,8 +277,8 @@
                     </div>
                     <hr>
                     <div class="text-central-square">
-                        <p>"I membri del nostro team lavorando constantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. "</p>
-                        <p class="author">Morten Thomsen, Global IT Lead</p>
+                        <p class="f-size-14">"I membri del nostro team lavorando constantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. "</p>
+                        <p class="author f-size-14">Morten Thomsen, Global IT Lead</p>
                     </div>
                 </div>
                 <div class="right-square float clearfix">
@@ -268,8 +296,6 @@
                     </div>
                 </div>
             </div>
-            <!-- ricorda di targhettizare col come figli di footer-section-companies -->
-    
             <div class="footer-section-companies heavenly">
                 <div class="small-container">
                     <div class="col float">
@@ -283,8 +309,8 @@
                </div>
             </div>
         </div>
-        <!-- domande frequenti -->
-        <div class="small-container">
+        <!-- DOMANDE FREQUENTI -->
+        <div class="second-small-container">
             <div class="frequent-questions">
                 <h4>Domande Frequenti</h4>
                 <div class="question-row m-top clearfix">
@@ -308,7 +334,9 @@
         </div>
     </main>
     <footer>
+        <!-- FOOTER -->
         <div class="container">
+            <!-- LINK ALLE DIVERSE PAGINE DEL SITO -->
             <div class="sitemap clearfix">
                 <div class="site-section float">
                     <ul>Dropbox
@@ -329,7 +357,7 @@
                     </ul>
                 </div>
                 <div class="site-section float">
-                    <ul>Azienda
+                    <ul class="f-size-15">Azienda
                         <li><a href="#">Applicazione Desktop</a></li>
                         <li><a href="#">Perchè Dropbox</a></li>
                         <li><a href="#">Piani</a></li>
@@ -338,7 +366,7 @@
                     </ul>
                 </div>
                 <div class="site-section float">
-                    <ul>Supporto
+                    <ul class="f-size-15">Supporto
                         <li><a href="#">Applicazione Desktop</a></li>
                         <li><a href="#">Perchè Dropbox</a></li>
                         <li><a href="#">Piani</a></li>
@@ -347,7 +375,7 @@
                     </ul>
                 </div>
                 <div class="site-section float">
-                    <ul>Community
+                    <ul class="f-size-15">Community
                         <li><a href="#">Applicazione Desktop</a></li>
                         <li><a href="#">Perchè Dropbox</a></li>
                         <li><a href="#">Piani</a></li>
@@ -356,6 +384,7 @@
                     </ul>
                 </div>
                 <hr>
+                <!-- MENU A TENDINA PER LA LINGUA -->
                 <div class="language">
                     <p class="color-lightgrey"><i class="fas fa-globe-americas"></i>Italiano<i class="fas fa-caret-up"></i></p>
                 </div>
