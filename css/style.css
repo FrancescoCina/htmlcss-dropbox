@@ -353,6 +353,9 @@ main{
     margin: 20px 0;    
 }
 
+
+/* ------------------ */
+ 
 .plan .content-plan div .fas,
 .plan .content-plan div .far{
     padding-right:2px;
@@ -404,6 +407,11 @@ main{
     height: 150px;
 }
 
+.enterprise .title-enterprise .plan-title{
+    height: 28px;
+    line-height: 28px;
+}
+
 .enterprise .left-enterprise{
     width: 65%;
     padding-top: 13px;
@@ -429,6 +437,8 @@ main{
     padding: 4px 35px;
     
 }
+
+/* SEZIONE PARTNER DROPBOX */
 
 .partner-dropbox{
     width: 100%;
@@ -684,14 +694,17 @@ main{
     line-height: 65px;
     font-weight: 800;
 }
+
 .second-small-container .frequent-questions .question-row .chevron-down{
     width:10%;
     line-height: 50px;
 }
+
 .second-small-container .frequent-questions .question-row{
     height: 65px;    
     border-top: 1px solid lightgray;    
 }
+
 .second-small-container .frequent-questions .question-row:last-child{
     border-bottom: 1px solid lightgray;    
 }
@@ -714,7 +727,6 @@ footer .container{
 
 footer .container .sitemap{
     color:white;
-    margin: 0 auto;
     padding-bottom: 110px;
 }
 
