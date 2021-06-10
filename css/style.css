@@ -10,6 +10,8 @@ body{
 
 /* UTILITIES */
 
+/* Utilizzo float */
+
 .clearfix::after{
     display: table;
     content: '';
@@ -23,6 +25,10 @@ body{
     float: right;
 } 
 
+/* -------- */
+
+/* Allineamento testo */
+
 .text-right{
     text-align: right;
 }
@@ -30,6 +36,9 @@ body{
 .text-center{
     text-align: center;
 }
+
+/* -------- */
+/* Buttons */
 
 .btn{
     padding: 5px 10px;
@@ -55,6 +64,10 @@ body{
 .btn:hover{
     filter:brightness(1.4)
 }
+ 
+/* --------------- */
+
+/* container */
 
 .container{
     max-width: 1400px;
@@ -75,7 +88,8 @@ body{
     height: 40%;
     margin: 0 auto;
 }
-
+/* ----------------- */
+/* Bordi */
 .border-grey{
     border: 1px solid lightgray; 
 }
@@ -83,17 +97,27 @@ body{
 .bottom-border-grey{
     border-bottom: 0.5px solid lightgray;
 }
+
+/* ------------ */
+
+/* Colori */
+
 .color-link{
     color: #0061FF;
-}
-
-.m-top{
-    margin-top: 50px;
 }
 
 .color-lightgrey{
     color:lightgray;
 }
+/* ------------ */
+
+/* Margini */
+.m-top-50px{
+    margin-top: 50px;
+}
+
+
+/* font size */
 
 .f-size-15{
     font-size: 15px;
@@ -101,6 +125,10 @@ body{
 
 .f-size-14{
     font-size: 14px;   
+}
+
+.f-size-13{
+    font-size: 13px;   
 }
 
 /* HEADER  */
@@ -163,6 +191,8 @@ body{
     display:block;
     position:absolute;
     z-index: 2; 
+    padding: 0;
+    margin:0;
 }   
 
 .topbar .nav-right ul .support li ul li:hover{
@@ -238,6 +268,7 @@ header .mainheader .title h1{
     }
 }
 
+/* ------------------ */
 
 .mainheader .container .cols .col-right .content-img{
     padding-bottom: 100px;    
@@ -352,8 +383,7 @@ main{
 .subscription-plan .solutions .plan p{
     margin: 20px 0;    
 }
-
-
+  
 /* ------------------ */
  
 .plan .content-plan div .fas,
@@ -434,8 +464,7 @@ main{
 }
 
 .enterprise .right-enterprise .btn{
-    padding: 4px 35px;
-    
+    padding: 4px 35px;    
 }
 
 /* SEZIONE PARTNER DROPBOX */
@@ -475,7 +504,6 @@ main{
     margin-bottom: 30px;
     line-height: 28px;
 }
-
 
 .text-pic a:hover{
     filter:brightness(0.9);
@@ -640,11 +668,12 @@ main{
 /* bordo in hover sui quadrati delle companies */
 .companies .main-section-companies .left-square .little-square:hover, 
 .companies .main-section-companies .right-square .little-square:hover, 
-.companies .main-section-companies .central-square .little-square:hover{
+.companies .main-section-companies .central-square .little-square:hover{    
     border: 10px solid rgb(233, 231, 231);
     opacity: 0.8;
 }
 
+/* --------- */
 
 .footer-section-companies{
     width: 100%;
@@ -673,8 +702,6 @@ main{
 .free-trial-btn .btn:hover{
     filter:brightness(0.9);
 }
-
-
 
 /* DOMANDE FREQUENTI */
 
@@ -742,7 +769,6 @@ footer .container .sitemap:last-child .site-section{
 footer .container .sitemap .site-section ul{
     font-weight: 600;
 }
-
 
 footer .container .sitemap .site-section ul li:first-child{
     margin-top: 15px;
